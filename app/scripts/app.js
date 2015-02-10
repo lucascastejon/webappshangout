@@ -2,34 +2,54 @@
 
 /**
  * @ngdoc overview
- * @name webappshangoutApp
+ * @name hangoutApp
  * @description
- * # webappshangoutApp
+ * # hangoutApp
  *
  * Main module of the application.
  */
-angular
-  .module('webappshangoutApp', [
+var app = angular
+  .module('hangoutApp', [
     'ngAnimate',
-    'ngAria',
     'ngCookies',
-    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,$locationProvider) {
+
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/login.html',
+        controller: 'LoginController'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardController'
+      })
+      .when('/pedidos',{
+        templateUrl:'views/pedidos.html',
+        controller:'PedidosController'
+      })
+      .when('/financeiro',{
+        templateUrl:'views/financeiro.html',
+        controller:'FinanceiroController'
+      })
+      .when('/fornecedores',{
+        templateUrl:'views/fornecedores.html',
+        controller:'FornecedorController'
+      })
+      .when('/clientes', {
+        templateUrl:'views/clientes.html',
+        controller:'ClienteController'
+      })
+      .when('/produtos',{
+        templateUrl:'views/produtos.html',
+        controller:'ProdutosController'
       })
       .otherwise({
         redirectTo: '/'
       });
+     // $locationProvider.html5Mode(true);
   });
