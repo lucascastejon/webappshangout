@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('webappshangoutApp'));
+  beforeEach(module('hangoutApp'));
 
   var MainCtrl,
     scope;
