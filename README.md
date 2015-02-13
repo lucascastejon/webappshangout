@@ -6,12 +6,12 @@ version 0.11.0.
 ## Build & development
 
 ### First install the npm
-Run `apt-get install npm` for npm
+Run `sudo apt-get install npm` for npm
 
 ### Install grunt, grunt-cli and bower see bellow
-Run `npm install grunt --save-dev` to save path
-Run `npm install -g grunt-cli` for grunt-cli
-Run `npm install -g bower` fot settings static files
+Run `sudo npm install grunt --save-dev` to save path
+Run `sudo npm install -g grunt-cli` for grunt-cli
+Run `sudo npm install -g bower` fot settings static files
 
 -------------------------------------------
 ### Starting the project
