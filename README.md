@@ -19,9 +19,9 @@ Run `sudo npm install -g bower` fot settings static files
 ### Starting the project
 Run `npm update`
 
-Run `grunt install`
+Run `grunt install --force`
 
-Run `bower install`
+Run `bower install --force`
 
 Run `grunt` for building and `grunt serve` for preview.
 -------------------------------------------
