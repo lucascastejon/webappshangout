@@ -10,7 +10,9 @@ Run `sudo apt-get install npm` for npm
 
 ### Install grunt, grunt-cli and bower see bellow
 Run `sudo npm install grunt --save-dev` to save path
+
 Run `sudo npm install -g grunt-cli` for grunt-cli
+
 Run `sudo npm install -g bower` fot settings static files
 
 -------------------------------------------
