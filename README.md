@@ -31,3 +31,5 @@ Look started server here: `http://localhost:9000/`
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+--case fail run `sudo npm install karma-phantomjs-launcher --save-dev` and run again `grunt test` 
